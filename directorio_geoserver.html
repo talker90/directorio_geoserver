@@ -7,43 +7,415 @@
 
 	<title>Directorio del FCD GeoServer</title>
 
-	<style type="text/css"></style>
+	<style type="text/css">
+		ul {
+			list-style: none
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul li {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+
+			ul li:last-of-type {
+				margin-bottom: 0;
+			}
+
+		ul li ul li {
+			font-size: 1.5rem;
+		}
+
+		ul li ul li ul li {
+			font-size: 1rem;
+		}
+
+		input[id*="level1"] {
+			display: none;
+		}
+
+		label[for*="level1"] + ul {
+				overflow: hidden;
+				height: 0;
+			}
+
+		input[id*="level1"]:checked ~ ul {
+				height: auto;
+			}
+
+			input[id*="level2"] {
+				display: none;
+			}
+
+			label[for*="level2"] + ul {
+					overflow: hidden;
+					height: 0;
+				}
+
+			input[id*="level2"]:checked ~ ul {
+					height: auto;
+				}
+	</style>
 
 </head>
 <body>
 <h1>Workspaces</h1>
 
 <ul>
-	<li>DMA
-		<ul>
-			<li>geo_All_archipelago_DMA220001</li>
-		</ul>	
+	<li>
+		<input type="checkbox" id="level1_1" />
+		<label for="level1_1">DTM</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_1_X" />
+					<label for="level2_1_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
 	</li>
-	<li>DTM</li>
-	<li>FEIG</li>
-	<li>IOA</li>
-	<li>SIGGAL</li>
-	<li>TNC</li>
-	<li>biozonificacion_bahia_urbina</li>
-	<li>bluehabitats</li>
-	<li>chadwick</li>
-	<li>datazone</li>
-	<li>drones</li>
-	<li>eos</li>
-	<li>fcd</li>
-	<li>geonode</li>
-	<li>gmr_atlas2104</li>
-	<li>hormigas</li>
-	<li>mgds</li>
-	<li>microzoning_2004_2006</li>
-	<li>natural_earth</li>
-	<li>orstom</li>
-	<li>seafloor_mapping_darwin_wolf</li>
-	<li>sh_indigenas_puerto_ayora</li>
-	<li>spot</li>
-	<li>whalesharks</li>
+	<li>
+		<input type="checkbox" id="level1_2" />
+		<label for="level1_2">FEIG</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_2_X" />
+					<label for="level2_2_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_3" />
+		<label for="level1_3">IOA</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_3_X" />
+					<label for="level2_3_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_4" />
+		<label for="level1_4">SIGGAL</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_4_X" />
+					<label for="level2_4_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_4" />
+		<label for="level1_4">TNC</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_4_X" />
+					<label for="level2_4_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_5" />
+		<label for="level1_5">biozonificacion_bahia_urbina</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_5_X" />
+					<label for="level2_5_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_6" />
+		<label for="level1_6">bluehabitats</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_6_X" />
+					<label for="level2_6_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_7" />
+		<label for="level1_7">chadwick</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_7_X" />
+					<label for="level2_7_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_8" />
+		<label for="level1_8">datazone</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_8_X" />
+					<label for="level2_8_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_9" />
+		<label for="level1_9">drones</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_9_X" />
+					<label for="level2_9_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_10" />
+		<label for="level1_10">eos</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_10_X" />
+					<label for="level2_10_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_11" />
+		<label for="level1_11">fcd</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_11_X" />
+					<label for="level2_11_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_12" />
+		<label for="level1_12">geonode</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_12_X" />
+					<label for="level2_12_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_13" />
+		<label for="level1_13">gmr_atlas2104</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_13_X" />
+					<label for="level2_13_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_14" />
+		<label for="level1_14">hormigas</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_14_X" />
+					<label for="level2_14_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_15" />
+		<label for="level1_15">mgds</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_15_X" />
+					<label for="level2_15_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_16" />
+		<label for="level1_16">microzoning_2004_2006</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_16_X" />
+					<label for="level2_16_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_17" />
+		<label for="level1_17">natural_earth</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_17_X" />
+					<label for="level2_17_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_18" />
+		<label for="level1_18">orstom</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_18_X" />
+					<label for="level2_18_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_19" />
+		<label for="level1_19">seafloor_mapping_darwin_wolf</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_19_X" />
+					<label for="level2_19_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_20" />
+		<label for="level1_20">sh_indigenas_puerto_ayora</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_20_X" />
+					<label for="level2_20_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_21" />
+		<label for="level1_21">spot</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_21_X" />
+					<label for="level2_21_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_22" />
+		<label for="level1_22">whalesharks</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="level2_22_X" />
+					<label for="level2_22_X">TEST</label>
+						<ul>
+							<li>
+								<a href="#0">TEST</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
 </ul>
-
 
 </body>
 </html>
