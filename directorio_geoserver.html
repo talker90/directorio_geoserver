@@ -5,37 +5,46 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Directorio del FCD GeoServer</title>
-
 	<style type="text/css">
-		ul {
+
+		.directorio {
 			list-style: none
 		}
 
-		a {
+		.layers {
 			color: black;
 			text-decoration: none;
 		}
 
-		a:hover {
+		.layers:hover {
 			text-decoration: underline;
 		}
 
-		ul li {
+		.directorio li {
 			font-size: 2rem;
 			margin-bottom: 1rem;
 		}
 
-			ul li:last-of-type {
+			.directorio li:last-of-type {
 				margin-bottom: 0;
 			}
 
-		ul li ul li {
+		.directorio li ul li {
 			font-size: 1.5rem;
 		}
 
-		ul li ul li ul li {
-			font-size: 1rem;
+		.directorio li ul li ul li {
+			font-size: 1.25rem;
+			margin-top: 1rem;
+		}
+
+		.directorio li ul li ul li ul li {
+			font-size: 1.25rem;
+			margin-top: 1rem;
+		}
+
+		.error::after {
+			content: " \26A0 ";
 		}
 
 		input[id*="level1"] {
@@ -67,19 +76,117 @@
 
 </head>
 <body>
-<h1>Workspaces</h1>
 
-<ul>
+<ul class ="directorio">
 	<li>
 		<input type="checkbox" id="level1_1" />
-		<label for="level1_1">DTM</label>
-			<ul>
+		<label for="level1_1">DMA</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_1_X" />
-					<label for="level2_1_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_1_1" />
+					<label for="level2_1_1">geo_All_archipelago_DMA220001</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_All_archipelago_DMA220001">geo_All_archipelago_DMA220001</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_2" />
+					<label for="level2_1_2">geo_Genovesa_DMA225511</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Genovesa_DMA225511">geo_Genovesa_DMA225511</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_3" />
+					<label for="level2_1_3">geo_Espanola_DMA225241</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Espanola_DMA225241">geo_Espanola_DMA225241</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_4" />
+					<label for="level2_1_4">geo_East_Isabela_-_West_Santiago_DMA225441</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_East_Isabela_-_West_Santiago_DMA225441">geo_East_Isabela_-_West_Santiago_DMA225441</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_5" />
+					<label for="level2_1_5">geo_San_Cristobal_DMA225211</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/DMA%geo_San_Cristobal_DMA225211">3Ageo_San_Cristobal_DMA225211</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_6" />
+					<label for="level2_1_6">geo_Pinta_-_Marchena_DMA225511</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Pinta_-_Marchena_DMA225511">geo_Pinta_-_Marchena_DMA225511</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_7" />
+					<label for="level2_1_7">geo_Santa_Fe_-_San_Cristobal_DMA225231</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Santa_Fe_-_San_Cristobal_DMA225231">geo_Santa_Fe_-_San_Cristobal_DMA225231</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_8" />
+					<label for="level2_1_8">geo_Floreana_DMA225261</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Floreana_DMA225261">geo_Floreana_DMA225261</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_9" />
+					<label for="level2_1_9">geo_South_Isabela_-_West_Floreana_DMA225291</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_South_Isabela_-_West_Floreana_DMA225291">geo_South_Isabela_-_West_Floreana_DMA225291</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_10" />
+					<label for="level2_1_10">geo_East_Isabela_-_South_Santiago_DMA225451</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_East_Isabela_-_South_Santiago_DMA225451">geo_East_Isabela_-_South_Santiago_DMA225451</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_11" />
+					<label for="level2_1_11">geo_Fernandina_-_Bahia_Banks_DMA225421</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Fernandina_-_Bahia_Banks_DMA225421">geo_Fernandina_-_Bahia_Banks_DMA225421</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_1_12" />
+					<label for="level2_1_12">geo_Galapagos_approaches_DMA210361</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Galapagos_approaches_DMA210361">geo_Galapagos_approaches_DMA210361</a>
 							</li>
 						</ul>
 				</li>
@@ -87,14 +194,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_2" />
-		<label for="level1_2">FEIG</label>
-			<ul>
+		<label for="level1_2">DTM</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_2_X" />
-					<label for="level2_2_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_2_1" />
+					<label for="level2_2_X">upwelling west geotiff</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="http://192.168.1.41/layers/DTM%3Aupwelling%20west%20geotiff">upwelling west geotiff</a>
 							</li>
 						</ul>
 				</li>
@@ -102,14 +209,197 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_3" />
-		<label for="level1_3">IOA</label>
-			<ul>
+		<label for="level1_3">FEIG</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_3_X" />
-					<label for="level2_3_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_3_1" />
+					<label for="level2_3_1">polistes versicolor_probabilidad</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Apolistes%20versicolor_probabilidad">polistes versicolor_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_2" />
+					<label for="level2_3_2">wasmania auropunctata_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/FEIG%3Awasmania%20auropunctata_probabilidad">wasmania auropunctata_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_3" />
+					<label for="level2_3_3">cedrela odorata_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="http://192.168.1.41/layers/FEIG%3Acedrela%20odorata_probabilidad">cedrela odorata_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_4" />
+					<label for="level2_3_4">rubus niveus_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Arubus%20niveus_probabilidad">rubus niveus_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_5" />
+					<label for="level2_3_5">philornis downsi_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#http://192.168.1.41/layers/FEIG%3Aphilornis%20downsi_probabilidad">philornis downsi_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_6" />
+					<label for="level2_3_6">lantana camara_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Alantana%20camara_probabilidad">lantana camara_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_7" />
+					<label for="level2_3_7">aedes aegypti_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Aaedes%20aegypti_probabilidad">aedes aegypti_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_8" />
+					<label for="level2_3_8">scinax quinquefasciata_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Ascinax%20quinquefasciata_probabilidad">scinax quinquefasciata_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_9" />
+					<label for="level2_3_9">rattus rattus_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Arattus%20rattus_probabilidad">rattus rattus_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_10" />
+					<label for="level2_3_10">syzigium jambos_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Asyzigium%20jambos_probabilidad">syzigium jambos_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_11" />
+					<label for="level2_3_11">pheidole megacephala_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Apheidole%20megacephala_probabilidad">pheidole megacephala_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_12" />
+					<label for="level2_3_12">rodolia cardinalis_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Arodolia%20cardinalis_probabilidad">rodolia cardinalis_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_13" />
+					<label for="level2_3_13">felis catus_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Afelis%20catus_probabilidad">felis catus_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_14" />
+					<label for="level2_3_14">crotophaga ani_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Acrotophaga%20ani_probabilidad">crotophaga ani_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_15" />
+					<label for="level2_3_15">pennisetum purpureum_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Apennisetum%20purpureum_probabilidad">pennisetum purpureum_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_16" />
+					<label for="level2_3_16">lissachatina fulica_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Alissachatina%20fulica_probabilidad">lissachatina fulica_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_17" />
+					<label for="level2_3_17">psidium guajaba_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Apsidium%20guajaba_probabilidad">psidium guajaba_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_18" />
+					<label for="level2_3_18">icerya purchasi_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Aicerya%20purchasi_probabilidad">icerya purchasi_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_19" />
+					<label for="level2_3_19">solenopsis geminata_probabilidad</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Asolenopsis%20geminata_probabilidad">solenopsis geminata_probabilidad</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_3_20" />
+					<label for="level2_3_20">feig_vector</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers error" href="#0">fernandina</a>
+							</li>
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Aestado_conservacion_ecosistemas">estado_conservacion_ecosistemas</a>
+							</li>
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Aespecies_invasoras">especies_invasoras</a>
+							</li>
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Aaccesibilidad">accesibilidad</a>
+							</li>
+							<li>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Aareas_priorizadas">areas_priorizadas</a>
 							</li>
 						</ul>
 				</li>
@@ -117,29 +407,239 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_4" />
-		<label for="level1_4">SIGGAL</label>
-			<ul>
+		<label for="level1_4">IOA</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_4_X" />
-					<label for="level2_4_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_4_1" />
+					<label for="level2_4_1">geo_Fernandina-North_Isabela-West_SantiagoIOA2051</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">geo_Fernandina-North_Isabela-West_SantiagoIOA2051</a>
 							</li>
 						</ul>
 				</li>
-			</ul>
-	</li>
-	<li>
-		<input type="checkbox" id="level1_4" />
-		<label for="level1_4">TNC</label>
-			<ul>
 				<li>
-					<input type="checkbox" id="level2_4_X" />
-					<label for="level2_4_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_4_2" />
+					<label for="level2_4_2">geo_Santiago-Santa_Cruz-SE_Isabela_IOA2021</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">geo_Santiago-Santa_Cruz-SE_Isabela_IOA2021</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_3" />
+					<label for="level2_4_3">geo_Canal_Simon_Bolivar_IOA20501</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Canal_Simon_Bolivar_IOA20501</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_4" />
+					<label for="level2_4_4">geo_Espanola_IOA20011</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Espanola_IOA20011</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_5" />
+					<label for="level2_4_5">geo_dma21036_gal_pnma_ecdr</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_dma21036_gal_pnma_ecdr</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_6" />
+					<label for="level2_4_6">geo_East_San_Cristobal_IOA20001</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_East_San_Cristobal_IOA20001</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_7" />
+					<label for="level2_4_7">geo_Bahia_Gardner_IOA20011</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Bahia_Gardner_IOA20011</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_8" />
+					<label for="level2_4_8">geo_Canal_Itabaca_IOA20201</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Canal_Itabaca_IOA20201</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_9" />
+					<label for="level2_4_9">geo_SE_Santa_Cruz_-_Santa_Fe_IOA20301</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_SE_Santa_Cruz_-_Santa_Fe_IOA20301</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_10" />
+					<label for="level2_4_10">geo_South_Genovesa_IOA201011</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_South_Genovesa_IOA201011</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_11" />
+					<label for="level2_4_11">geo_Bahia_Elizabeth_IOA206021</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Bahia_Elizabeth_IOA206021</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_12" />
+					<label for="level2_4_12">geo_Punta_Pitt_IOA200211</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Punta_Pitt_IOA200211</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_13" />
+					<label for="level2_4_13">geo_Puerto_Villamil_approaches_IOA206110</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Puerto_Villamil_approaches_IOA206110</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_14" />
+					<label for="level2_4_14">geo_Bahia_Academy_IOA203021</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Bahia_Academy_IOA203021</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_15" />
+					<label for="level2_4_15">geo_Bahia_Cartago_IOA206011</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Bahia_Cartago_IOA206011</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_16" />
+					<label for="level2_4_16">geo_South_Isabela_-_Fernandina_IOA2061</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_South_Isabela_-_Fernandina_IOA2061</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_17" />
+					<label for="level2_4_17">geo_Leon_Dormido_-_Bahia_Stevens_IOA200021</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Leon_Dormido_-_Bahia_Stevens_IOA200021</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_18" />
+					<label for="level2_4_18">geo_South_Santa_Cruz_-_Floreana_IOA2031</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_South_Santa_Cruz_-_Floreana_IOA2031</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_19" />
+					<label for="level2_4_19">geo_Bahia_James_IOA202121</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Bahia_James_IOA202121</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_20" />
+					<label for="level2_4_20">geo_Islas_Plazas_IOA202031</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Islas_Plazas_IOA202031</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_21" />
+					<label for="level2_4_21">geo_Punta_Espinoza_IOA205021</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Punta_Espinoza_IOA205021</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_22" />
+					<label for="level2_4_22">geo_NE_Santa_Cruz_IOA20201</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_NE_Santa_Cruz_IOA20201</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_23" />
+					<label for="level2_4_23">geo_Floreana_IOA20311</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Floreana_IOA20311</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_24" />
+					<label for="level2_4_24">geo_Bartolome_IOA202111</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Bartolome_IOA202111</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_25" />
+					<label for="level2_4_25">geo_Caleta_Aeolian_Baltra_IOA202021</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_Caleta_Aeolian_Baltra_IOA202021</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_4_26" />
+					<label for="level2_4_26">geo_North_Baltra_-_Seymour_Norte_IOA202011</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geo_North_Baltra_-_Seymour_Norte_IOA202011</a>
 							</li>
 						</ul>
 				</li>
@@ -147,14 +647,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_5" />
-		<label for="level1_5">biozonificacion_bahia_urbina</label>
-			<ul>
+		<label for="level1_5">SIGGAL</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_5_X" />
-					<label for="level2_5_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_5_1" />
+					<label for="level2_5_1">mosaico</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">mosaico</a>
 							</li>
 						</ul>
 				</li>
@@ -162,14 +662,257 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_6" />
-		<label for="level1_6">bluehabitats</label>
-			<ul>
+		<label for="level1_6">TNC</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_6_X" />
-					<label for="level2_6_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_6_1" />
+					<label for="level2_6_1">cartog_galapagos</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">cartog_galapagos</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_2" />
+					<label for="level2_6_2">esp_inv_isabela_cc</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">esp_inv_isabela_cc</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_3" />
+					<label for="level2_6_3">esp_inv_santiago</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">esp_inv_santiago</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_4" />
+					<label for="level2_6_4">sens_rem_santa_maria</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_santa_maria</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_5" />
+					<label for="level2_6_5">esp_inv_san_cristobal</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">esp_inv_san_cristobal</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_6" />
+					<label for="level2_6_6">cob_veg_darwin</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_darwin</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_7" />
+					<label for="level2_6_7">sens_rem_isabela_sur</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_isabela_sur</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_8" />
+					<label for="level2_6_8">cartog_isabela_fern_sant</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_isabela_fern_sant</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_9" />
+					<label for="level2_6_9">sens_rem_pin_march_gen</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_pin_march_gen</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_10" />
+					<label for="level2_6_10">sens_rem_isabela_fernandina</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_isabela_fernandina</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_11" />
+					<label for="level2_6_11">sens_rem_san_cristobal</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_san_cristobal</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_12" />
+					<label for="level2_6_12">cob_veg_santa_maria</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_santa_maria</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_13" />
+					<label for="level2_6_13">sens_rem_espanola</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_espanola</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_14" />
+					<label for="level2_6_14">cartog_isabela_sur</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_isabela_sur</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_15" />
+					<label for="level2_6_15">cartog_wolf.</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_wolf.</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_16" />
+					<label for="level2_6_16">cob_veg_santa_cruz</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_santa_cruz</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_17" />
+					<label for="level2_6_17">cartog_isabela_fern_san</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_isabela_fern_san</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_18" />
+					<label for="level2_6_18">cob_veg_isabela_fernandina</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_isabela_fernandina</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_19" />
+					<label for="level2_6_19">cob_veg_isabela_sur</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_isabela_sur</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_20" />
+					<label for="level2_6_20">cob_veg_santiago</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_santiago</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_21" />
+					<label for="level2_6_21">cartog_darwin</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_darwin</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_22" />
+					<label for="level2_6_22">sens_rem_santiago</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_santiago</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_23" />
+					<label for="level2_6_23">esp_inv_isabela_sn</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">esp_inv_isabela_sn</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_24" />
+					<label for="level2_6_24">cob_veg_wolf</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cob_veg_wolf</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_25" />
+					<label for="level2_6_25">esp_inv_santa_maria</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">esp_inv_santa_maria</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_26" />
+					<label for="level2_6_26">cartog_san_cristobal</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_san_cristobal</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_27" />
+					<label for="level2_6_27">esp_inv_santa_cruz</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">esp_inv_santa_cruz</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_6_28" />
+					<label for="level2_6_28">sens_rem_wolf</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sens_rem_wolf</a>
 							</li>
 						</ul>
 				</li>
@@ -177,14 +920,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_7" />
-		<label for="level1_7">chadwick</label>
-			<ul>
+		<label for="level1_7">biomakm</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_7_X" />
-					<label for="level2_7_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_7_1" />
+					<label for="level2_7_1"></label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -192,14 +935,23 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_8" />
-		<label for="level1_8">datazone</label>
-			<ul>
+		<label for="level1_8">biozonificacion_bahia_urbina</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_8_X" />
-					<label for="level2_8_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_8_1" />
+					<label for="level2_8_1">urbina_geo</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">urbina_geo</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_8_2" />
+					<label for="level2_8_2">biozonificacion_bahia_urbina</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">biozonificacion_bahia_urbina</a>
 							</li>
 						</ul>
 				</li>
@@ -207,14 +959,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_9" />
-		<label for="level1_9">drones</label>
-			<ul>
+		<label for="level1_9">bluehabitats</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_9_X" />
-					<label for="level2_9_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_9_1" />
+					<label for="level2_9_1">bluehabitats</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">bluehabitats</a>
 							</li>
 						</ul>
 				</li>
@@ -222,14 +974,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_10" />
-		<label for="level1_10">eos</label>
-			<ul>
+		<label for="level1_10">chadwick</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_10_X" />
-					<label for="level2_10_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_10_1" />
+					<label for="level2_10_1">chadwick_bathymetry</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">chadwick_bathymetry</a>
 							</li>
 						</ul>
 				</li>
@@ -237,14 +989,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_11" />
-		<label for="level1_11">fcd</label>
-			<ul>
+		<label for="level1_11">datazone</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_11_X" />
-					<label for="level2_11_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_11_1" />
+					<label for="level2_11_1"></label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -252,14 +1004,23 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_12" />
-		<label for="level1_12">geonode</label>
-			<ul>
+		<label for="level1_12">drones</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_12_X" />
-					<label for="level2_12_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_12_1" />
+					<label for="level2_12_1">southplaza_dron</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">southplaza_dron</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_12_2" />
+					<label for="level2_12_2">northplaza_dron</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">northplaza_dron</a>
 							</li>
 						</ul>
 				</li>
@@ -267,14 +1028,68 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_13" />
-		<label for="level1_13">gmr_atlas2104</label>
-			<ul>
+		<label for="level1_13">eos</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_13_X" />
-					<label for="level2_13_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_13_1" />
+					<label for="level2_13_1">marchena_5_nov_2005_8bit</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">marchena_5_nov_2005_8bit</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_13_2" />
+					<label for="level2_13_2">pinta_13_sep_2005_8bit</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">pinta_13_sep_2005_8bit</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_13_3" />
+					<label for="level2_13_3">pinta_30_mar_2006</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">pinta_30_mar_2006</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_13_4" />
+					<label for="level2_13_4">marchena_3_mar_2006</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">marchena_3_mar_2006</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_13_5" />
+					<label for="level2_13_5">wolf_12_feb_2006_8bit</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">wolf_12_feb_2006_8bit</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_13_6" />
+					<label for="level2_13_6">genovesa_geo</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">genovesa_geo</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_13_7" />
+					<label for="level2_13_7">santamaria_25_mar_2006_8bit</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">santamaria_25_mar_2006_8bit</a>
 							</li>
 						</ul>
 				</li>
@@ -282,14 +1097,68 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_14" />
-		<label for="level1_14">hormigas</label>
-			<ul>
+		<label for="level1_14">fcd</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_14_X" />
-					<label for="level2_14_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_14_1" />
+					<label for="level2_14_1">usos_suelo</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">usos_suelo</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_14_2" />
+					<label for="level2_14_2">relieve</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">relieve</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_14_3" />
+					<label for="level2_14_3">mundo</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mundo</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_14_4" />
+					<label for="level2_14_4">fcd</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">fcd</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_14_5" />
+					<label for="level2_14_5">sistema_urbano</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sistema_urbano</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_14_6" />
+					<label for="level2_14_6">ecuador</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">ecuador</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_14_7" />
+					<label for="level2_14_7">medio_fisico</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">medio_fisico</a>
 							</li>
 						</ul>
 				</li>
@@ -297,14 +1166,122 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_15" />
-		<label for="level1_15">mgds</label>
-			<ul>
+		<label for="level1_15">geonode</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_15_X" />
-					<label for="level2_15_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_15_1" />
+					<label for="level2_15_1">sens_rem_darwinmodified</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">sens_rem_darwinmodified</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_2" />
+					<label for="level2_15_2">ortofoto</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">ortofoto</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_3" />
+					<label for="level2_15_3">tri2rc</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">tri2rc</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_4" />
+					<label for="level2_15_4">geonode</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">geonode</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_5" />
+					<label for="level2_15_5">tri1rc_1</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">tri1rc_1</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_6" />
+					<label for="level2_15_6">EPSG:32715</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">EPSG:32715</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_7" />
+					<label for="level2_15_7">tri1rc</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">tri1rc</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_8" />
+					<label for="level2_15_8">tri11</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">tri11</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_9" />
+					<label for="level2_15_9">cartog_san_cristobal</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cartog_san_cristobal</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_10" />
+					<label for="level2_15_10">datastore</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">datastore</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_11" />
+					<label for="level2_15_11">sandy_beaches</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sandy_beaches</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_12" />
+					<label for="level2_15_12">test</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">test</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_15_13" />
+					<label for="level2_15_13">datazone_mustra_taxon</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">datazone_mustra_taxon</a>
 							</li>
 						</ul>
 				</li>
@@ -312,14 +1289,140 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_16" />
-		<label for="level1_16">microzoning_2004_2006</label>
-			<ul>
+		<label for="level1_16">gmr_atlas2104</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_16_X" />
-					<label for="level2_16_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_16_1" />
+					<label for="level2_16_1">5_monitoring_eco_monitoring_sites</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">5_monitoring_eco_monitoring_sites</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_2" />
+					<label for="level2_16_2">habitats_coral_communities</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">habitats_coral_communities</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_3" />
+					<label for="level2_16_3">1_ecology_biogeography_focal_species_coastal_vertebrates</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">1_ecology_biogeography_focal_species_coastal_vertebrates</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_4" />
+					<label for="level2_16_4">1_ecology_biogeography_diversity</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">1_ecology_biogeography_diversity</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_5" />
+					<label for="level2_16_5">focal_species_pinnipeds</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">focal_species_pinnipeds</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_6" />
+					<label for="level2_16_6">focal_species_marine_turtles</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">focal_species_marine_turtles</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_7" />
+					<label for="level2_16_7">macroinverts</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">macroinverts</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_8" />
+					<label for="level2_16_8">1_ecology_biogeography_demersal_fish</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">1_ecology_biogeography_demersal_fish</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_9" />
+					<label for="level2_16_9">gmr_atlas2104</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">gmr_atlas2104</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_10" />
+					<label for="level2_16_10">1_ecology_biogeography_communities_subtidal</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">1_ecology_biogeography_communities_subtidal</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_11" />
+					<label for="level2_16_11">coast_2000_cdf_dpng_zpc</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">coast_2000_cdf_dpng_zpc</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_12" />
+					<label for="level2_16_12">1_ecology_biogeography_focal_species_invasive_species</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">1_ecology_biogeography_focal_species_invasive_species</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_13" />
+					<label for="level2_16_13">near_shore_subtidal</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">near_shore_subtidal</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_14" />
+					<label for="level2_16_14">iogeography_schemes</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">iogeography_schemes</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_16_15" />
+					<label for="level2_16_15">monitoring</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">monitoring</a>
 							</li>
 						</ul>
 				</li>
@@ -327,14 +1430,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_17" />
-		<label for="level1_17">natural_earth</label>
-			<ul>
+		<label for="level1_17">hormigas</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_17_X" />
-					<label for="level2_17_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_17_1" />
+					<label for="level2_17_1"></label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -342,14 +1445,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_18" />
-		<label for="level1_18">orstom</label>
-			<ul>
+		<label for="level1_18">mgds</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_18_X" />
-					<label for="level2_18_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_18_1" />
+					<label for="level2_18_1">GMRTv2_7</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">GMRTv2_7</a>
 							</li>
 						</ul>
 				</li>
@@ -357,14 +1460,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_19" />
-		<label for="level1_19">seafloor_mapping_darwin_wolf</label>
-			<ul>
+		<label for="level1_19">microzoning_2004_2006</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_19_X" />
-					<label for="level2_19_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_19_" />
+					<label for="level2_19_1">microzoning_2004_2006</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">microzoning_2004_2006</a>
 							</li>
 						</ul>
 				</li>
@@ -372,14 +1475,14 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_20" />
-		<label for="level1_20">sh_indigenas_puerto_ayora</label>
-			<ul>
+		<label for="level1_20">natural_earth</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_20_X" />
-					<label for="level2_20_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_20_1" />
+					<label for="level2_20_1">natural_earth</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">natural_earth</a>
 							</li>
 						</ul>
 				</li>
@@ -387,14 +1490,185 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_21" />
-		<label for="level1_21">spot</label>
-			<ul>
+		<label for="level1_21">orstom</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_21_X" />
-					<label for="level2_21_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_21_1" />
+					<label for="level2_21_1">hoja3-eco</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">hoja3-eco</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_2" />
+					<label for="level2_21_2">hoja2-eco</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja2-eco</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_3" />
+					<label for="level2_21_3">hoja3-esv</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja3-esv</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_4" />
+					<label for="level2_21_4">mapa_geomorfologico_SanCristobal_SantaFe_hoja5</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mapa_geomorfologico_SanCristobal_SantaFe_hoja5</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_5" />
+					<label for="level2_21_5">hoja1-eco</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja1-eco</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_6" />
+					<label for="level2_21_6">mosaico_orstom</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mosaico_orstom</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_7" />
+					<label for="level2_21_7">hoja4-esv</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja4-esv</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_8" />
+					<label for="level2_21_8">hoja5-esv</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja5-esv</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_9" />
+					<label for="level2_21_9">hoja1-esv</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja1-esv</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_10" />
+					<label for="level2_21_10">mapa_geomorfologico_Isabela_Norte_Fernandina_hoja2</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mapa_geomorfologico_Isabela_Norte_Fernandina_hoja2</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_11" />
+					<label for="level2_21_11">mapa_geomorfologico_Isabela_Sur_Fernandina_hoja3</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mapa_geomorfologico_Isabela_Sur_Fernandina_hoja3</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_12" />
+					<label for="level2_21_12">mapa_geomorfologico_Pinta_Marchena_Genovesa_hoja1</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mapa_geomorfologico_Pinta_Marchena_Genovesa_hoja1</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_13" />
+					<label for="level2_21_13">hoja2-esv</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja2-esv</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_14" />
+					<label for="level2_21_14">hoja6-esv</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja6-esv</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_15" />
+					<label for="level2_21_15">hoja5-eco</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja5-eco</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_16" />
+					<label for="level2_21_16">hoja6-eco</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja6-eco</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_17" />
+					<label for="level2_21_17">mapa_geomorfologico_SantaMaria_Espanola_hoja6</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mapa_geomorfologico_SantaMaria_Espanola_hoja6</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_18" />
+					<label for="level2_21_18">hoja4-eco</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">hoja4-eco</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_19" />
+					<label for="level2_21_19">mapa_geomorfologico_SantaCruz_Baltra_Rabida_Santiago_Pinzon_hoja4</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">mapa_geomorfologico_SantaCruz_Baltra_Rabida_Santiago_Pinzon_hoja4</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_21_20" />
+					<label for="level2_21_20">orstom_vector</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">orstom_vector</a>
 							</li>
 						</ul>
 				</li>
@@ -402,14 +1676,221 @@
 	</li>
 	<li>
 		<input type="checkbox" id="level1_22" />
-		<label for="level1_22">whalesharks</label>
-			<ul>
+		<label for="level1_21">seafloor_mapping_darwin_wolf</label>
+			<ul class ="directorio">
 				<li>
-					<input type="checkbox" id="level2_22_X" />
-					<label for="level2_22_X">TEST</label>
-						<ul>
+					<input type="checkbox" id="level2_22_1" />
+					<label for="level2_22_1">seafloor_mapping_darwin_wolf</label>
+						<ul class ="directorio">
 							<li>
-								<a href="#0">TEST</a>
+								<a class="layers" href="#0">seafloor_mapping_darwin_wolf</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_23" />
+		<label for="level1_22">sh_indigenas_puerto_ayora</label>
+			<ul class ="directorio">
+				<li>
+					<input type="checkbox" id="level2_23_1" />
+					<label for="level2_23_1">sh_indigenas_puerto_ayora</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">sh_indigenas_puerto_ayora</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_24" />
+		<label for="level1_23">spot</label>
+			<ul class ="directorio">
+				<li>
+					<input type="checkbox" id="level2_24_1" />
+					<label for="level2_24_1">SPOT2007FloreanaTC</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">SPOT2007FloreanaTC</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_2" />
+					<label for="level2_24_2">spot_santa_cruz_wgs84_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_santa_cruz_wgs84_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_3" />
+					<label for="level2_24_3">cruz_3_iii_00</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cruz_3_iii_00</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_4" />
+					<label for="level2_24_4">isabela_este_29_iii_00</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">isabela_este_29_iii_00</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_5" />
+					<label for="level2_24_5">cristobal_2_iii_00.tif</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cristobal_2_iii_00.tif</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_6" />
+					<label for="level2_24_6">marchena_9_01_2001</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">marchena_9_01_2001</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_7" />
+					<label for="level2_24_7">spot_isabela_sur_wgs84_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_isabela_sur_wgs84_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_8" />
+					<label for="level2_24_8">isabela_norte_30_xi_99</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">isabela_norte_30_xi_99</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_9" />
+					<label for="level2_24_9">spot_isabela_norte_wgs84_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_isabela_norte_wgs84_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_10" />
+					<label for="level2_24_10">isabela_suroeste_25xi99</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">isabela_suroeste_25xi99</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_11" />
+					<label for="level2_24_11">spot_cristobal_wgs84_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_cristobal_wgs84_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_12" />
+					<label for="level2_24_12">spot_santiago_santa_cruz_wgs84_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_santiago_santa_cruz_wgs84_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_13" />
+					<label for="level2_24_13">cristobal_rename</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">cristobal_rename</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_14" />
+					<label for="level2_24_14">spot_fernandina_wgs84_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_fernandina_wgs84_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_15" />
+					<label for="level2_24_15">pinta_9_01_2001_15s._9_01_2001_15s</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">pinta_9_01_2001_15s._9_01_2001_15s</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_16" />
+					<label for="level2_24_16">spot_isabela_centro_wgs84</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">spot_isabela_centro_wgs84</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_17" />
+					<label for="level2_24_17">SPOT2007SantaCruzTCgeoref</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">SPOT2007SantaCruzTCgeoref</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_18" />
+					<label for="level2_24_18">floreana_2000_03_03</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">floreana_2000_03_03</a>
+							</li>
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="level2_24_19" />
+					<label for="level2_24_19">isabela_oeste_3_xi_99</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">isabela_oeste_3_xi_99</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+	</li>
+	<li>
+		<input type="checkbox" id="level1_24" />
+		<label for="level1_23">whalesharks</label>
+			<ul class ="directorio">
+				<li>
+					<input type="checkbox" id="level2_24_1" />
+					<label for="level2_24_1">darwinBathyUTM15nRes5</label>
+						<ul class ="directorio">
+							<li>
+								<a class="layers" href="#0">darwinBathyUTM15nRes5</a>
 							</li>
 						</ul>
 				</li>
