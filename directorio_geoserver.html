@@ -43,44 +43,34 @@
 			margin-top: 1rem;
 		}
 
-		.error::after {
-			content: " \26A0 ";
+		.directorio .error::after {
+			content: " \26A0 " !important;
 		}
 
 		.unlisted::before {
 			content: " \02A37 \A0 ";
 		}
 
-		input[id*="level1"] {
+		input[id*="level1"], input[id*="level2"] {
 			display: none;
 		}
 
-		label[for*="level1"] + ul {
+		label[for*="level1"] + ul, label[for*="level2"] + ul {
 				overflow: hidden;
 				height: 0;
 			}
 
-		input[id*="level1"]:checked ~ ul {
+		input[id*="level1"]:checked ~ ul, input[id*="level2"]:checked ~ ul, input[id="expand_all"]:checked *, input[id="expand_all"]:checked ~ ul li ul {
 				height: auto;
 			}
 
-			input[id*="level2"] {
-				display: none;
-			}
-
-			label[for*="level2"] + ul {
-					overflow: hidden;
-					height: 0;
-				}
-
-			input[id*="level2"]:checked ~ ul {
-					height: auto;
-				}
 	</style>
 
 </head>
 <body>
 
+<input type="checkbox" id="expand_all" />
+<label for="expand_all"><em>Expand All</em></label>
 <ul class ="directorio">
 	<li>
 		<input type="checkbox" id="level1_1" />
@@ -145,7 +135,7 @@
 					<label for="level2_1_7">geo_Santa_Fe_-_San_Cristobal_DMA225231</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/DMA%3Ageo_Santa_Fe_-_San_Cristobal_DMA225231">geo_Santa_Fe_-_San_Cristobal_DMA225231</a>
+								<a class="layers" href="http://192.168.1.41/layers/DMA%3Ageo_Santa_Fe_-_San_Cristobal_DMA225231">geo_Santa_Fe_-_San_Cristobal_DMA225231</a>
 							</li>
 						</ul>
 				</li>
@@ -229,7 +219,7 @@
 					<label for="level2_3_2">wasmania auropunctata_probabilidad</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/FEIG%3Awasmania%20auropunctata_probabilidad">wasmania auropunctata_probabilidad</a>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Awasmania%20auropunctata_probabilidad">wasmania auropunctata_probabilidad</a>
 							</li>
 						</ul>
 				</li>
@@ -238,7 +228,7 @@
 					<label for="level2_3_3">cedrela odorata_probabilidad</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/FEIG%3Acedrela%20odorata_probabilidad">cedrela odorata_probabilidad</a>
+								<a class="layers" href="http://192.168.1.41/layers/FEIG%3Acedrela%20odorata_probabilidad">cedrela odorata_probabilidad</a>
 							</li>
 						</ul>
 				</li>
@@ -418,7 +408,7 @@
 					<label for="level2_4_1">geo_Fernandina-North_Isabela-West_SantiagoIOA2051</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/IOA%3Ageo_Fernandina-North_Isabela-West_SantiagoIOA2051">geo_Fernandina-North_Isabela-West_SantiagoIOA2051</a>
+								<a class="layers" href="http://192.168.1.41/layers/IOA%3Ageo_Fernandina-North_Isabela-West_SantiagoIOA2051">geo_Fernandina-North_Isabela-West_SantiagoIOA2051</a>
 							</li>
 							<li>
 								<a class="layers error unlisted" href="http://192.168.1.41/layers/IOA%3Ageo_Fernandina-North_Isabela-West_SantiagoIOA20510">geo_Fernandina-North_Isabela-West_SantiagoIOA20510</a>
@@ -646,7 +636,7 @@
 					<label for="level2_4_21">geo_Punta_Espinoza_IOA205021</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/IOA%3Ageo_Punta_Espinoza_IOA205021">geo_Punta_Espinoza_IOA205021</a>
+								<a class="layers" href="http://192.168.1.41/layers/IOA%3Ageo_Punta_Espinoza_IOA205021">geo_Punta_Espinoza_IOA205021</a>
 							</li>
 							<li>
 								<a class="layers error unlisted" href="http://192.168.1.41/layers/IOA%3Ageo_Punta_Espinoza_IOA2050210">geo_Punta_Espinoza_IOA2050210</a>
@@ -658,7 +648,7 @@
 					<label for="level2_4_22">geo_NE_Santa_Cruz_IOA20201</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/IOA%3Ageo_NE_Santa_Cruz_IOA20201">geo_NE_Santa_Cruz_IOA20201</a>
+								<a class="layers" href="http://192.168.1.41/layers/IOA%3Ageo_NE_Santa_Cruz_IOA20201">geo_NE_Santa_Cruz_IOA20201</a>
 							</li>
 							<li>
 								<a class="layers error unlisted" href="http://192.168.1.41/layers/IOA%3Ageo_NE_Santa_Cruz_IOA202010">geo_NE_Santa_Cruz_IOA202010</a>
@@ -670,7 +660,7 @@
 					<label for="level2_4_23">geo_Floreana_IOA20311</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/IOA%3Ageo_Floreana_IOA20311">geo_Floreana_IOA20311</a>
+								<a class="layers" href="http://192.168.1.41/layers/IOA%3Ageo_Floreana_IOA20311">geo_Floreana_IOA20311</a>
 							</li>
 							<li>
 								<a class="layers error unlisted" href="http://192.168.1.41/layers/IOA%3Ageo_Floreana_IOA203110">geo_Floreana_IOA203110</a>
@@ -694,7 +684,7 @@
 					<label for="level2_4_25">geo_Caleta_Aeolian_Baltra_IOA202021</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/IOA%3Ageo_Caleta_Aeolian_Baltra_IOA202021">geo_Caleta_Aeolian_Baltra_IOA202021</a>
+								<a class="layers" href="http://192.168.1.41/layers/IOA%3Ageo_Caleta_Aeolian_Baltra_IOA202021">geo_Caleta_Aeolian_Baltra_IOA202021</a>
 							</li>
 							<li>
 								<a class="layers error unlisted" href="http://192.168.1.41/layers/IOA%3Ageo_Caleta_Aeolian_Baltra_IOA2020210">geo_Caleta_Aeolian_Baltra_IOA2020210</a>
@@ -757,7 +747,7 @@
 					<label for="level2_6_3">esp_inv_santiago</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Aesp_inv_santiago">esp_inv_santiago</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Aesp_inv_santiago">esp_inv_santiago</a>
 							</li>
 						</ul>
 				</li>
@@ -793,7 +783,7 @@
 					<label for="level2_6_7">sens_rem_isabela_sur</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Asens_rem_isabela_sur">sens_rem_isabela_sur</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Asens_rem_isabela_sur">sens_rem_isabela_sur</a>
 							</li>
 						</ul>
 				</li>
@@ -802,7 +792,7 @@
 					<label for="level2_6_8">cartog_isabela_fern_sant</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acartog_isabela_fern_sant">cartog_isabela_fern_sant</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acartog_isabela_fern_sant">cartog_isabela_fern_sant</a>
 							</li>
 						</ul>
 				</li>
@@ -829,7 +819,7 @@
 					<label for="level2_6_11">sens_rem_san_cristobal</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Asens_rem_san_cristobal">sens_rem_san_cristobal</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Asens_rem_san_cristobal">sens_rem_san_cristobal</a>
 							</li>
 						</ul>
 				</li>
@@ -856,7 +846,7 @@
 					<label for="level2_6_14">cartog_isabela_sur</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acartog_isabela_sur">cartog_isabela_sur</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acartog_isabela_sur">cartog_isabela_sur</a>
 							</li>
 						</ul>
 				</li>
@@ -865,7 +855,7 @@
 					<label for="level2_6_15">cartog_wolf</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acartog_wolf">cartog_wolf</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acartog_wolf">cartog_wolf</a>
 							</li>
 						</ul>
 				</li>
@@ -874,7 +864,7 @@
 					<label for="level2_6_16">cob_veg_santa_cruz</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acob_veg_santa_cruz">cob_veg_santa_cruz</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/TNC%3Acob_veg_santa_cruz">cob_veg_santa_cruz</a>
 							</li>
 						</ul>
 				</li>
@@ -883,7 +873,7 @@
 					<label for="level2_6_17">cartog_isabela_fern_sant</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/TNC%3Acartog_isabela_fern_sant">cartog_isabela_fern_sant</a>
+								<a class="layers" href="http://192.168.1.41/layers/TNC%3Acartog_isabela_fern_sant">cartog_isabela_fern_sant</a>
 							</li>
 						</ul>
 				</li>
@@ -928,7 +918,7 @@
 					<label for="level2_6_22">sens_rem_santiago</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/TNC%3Asens_rem_santiago">sens_rem_santiago</a>
+								<a class="layers" href="http://192.168.1.41/layers/TNC%3Asens_rem_santiago">sens_rem_santiago</a>
 							</li>
 						</ul>
 				</li>
@@ -1159,7 +1149,7 @@
 					<label for="level2_12_1">southplaza_dron</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/drones%3Asouthplaza">southplaza_dron</a>
+								<a class="layers" href="http://192.168.1.41/layers/drones%3Asouthplaza">southplaza_dron</a>
 							</li>
 						</ul>
 				</li>
@@ -1285,7 +1275,7 @@
 								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Ada03_linea_costa">da03_linea_costa</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Ada06_parque_nacional">da06_parque_nacional</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Ada06_parque_nacional">da06_parque_nacional</a>
 							</li>
 							<li>
 								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Ada01_linea_base">da01_linea_base</a>
@@ -1321,7 +1311,7 @@
 					<label for="level2_14_6">ecuador</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Aec01_nucleos_poblacion">ec01_nucleos_poblacion</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Aec01_nucleos_poblacion">ec01_nucleos_poblacion</a>
 							</li>
 							<li>
 								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Aec02_nucleos_poblacion_puntual">ec02_nucleos_poblacion_puntual</a>
@@ -1333,13 +1323,13 @@
 					<label for="level2_14_7">medio_fisico</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Amf03_biogeografia">mf03_biogeografia</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Amf03_biogeografia">mf03_biogeografia</a>
 							</li>
 							<li>
 								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Amf01_islas">mf01_islas</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Amf02_zona_ecologica">mf02_zona_ecologica</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/fcd%3Amf02_zona_ecologica">mf02_zona_ecologica</a>
 							</li>
 						</ul>
 				</li>
@@ -1363,7 +1353,7 @@
 					<label for="level2_15_2">ortofoto</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0">ortofoto</a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1372,7 +1362,7 @@
 					<label for="level2_15_7">tri1rc</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers" href="#0">tri1rc</a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1381,7 +1371,7 @@
 					<label for="level2_15_8">tri11</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0">tri11</a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1405,7 +1395,7 @@
 								<a class="layers error" href="#0">ptos_todos_code_grid</a>
 							</li>
 							<li>
-								<a class="layers error" href="#0">ecom_sites_1994_2014_1</a>
+								<a class="layers" href="http://192.168.1.41/layers/gmr_atlas2104%3Aecom_sites_1994_2014">ecom_sites_1994_2014_1</a>
 							</li>
 							<li>
 								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/geonode%3Aairports">airports</a>
@@ -1438,7 +1428,7 @@
 					<label for="level2_15_13">geonode</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0"></a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1447,7 +1437,7 @@
 					<label for="level2_15_13">tri2rc</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0"></a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1456,7 +1446,7 @@
 					<label for="level2_15_13">tri1rc_1</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0"></a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1465,7 +1455,7 @@
 					<label for="level2_15_13">EPSG:32715</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0"></a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1474,7 +1464,7 @@
 					<label for="level2_15_13">sandy_beaches</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0"></a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1483,7 +1473,7 @@
 					<label for="level2_15_13">test</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="#0"></a>
+								<a class="layers" href="#0"></a>
 							</li>
 						</ul>
 				</li>
@@ -1681,10 +1671,10 @@
 					<label for="level2_16_15">monitoring</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/gmr_atlas2104%3Acoral%20transect%20lines%202005-7">coral transect lines 2005-7</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/gmr_atlas2104%3Acoral%20transect%20lines%202005-7">coral transect lines 2005-7</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://geoportal.fcdarwin.org.ec/layers/gmr_atlas2104%3Acoral%20transect%20points%202005-7">coral transect points 2005-7</a>
+								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/gmr_atlas2104%3Acoral%20transect%20points%202005-7">coral transect points 2005-7</a>
 							</li>
 							<li>
 								<a class="layers" href="http://geoportal.fcdarwin.org.ec/layers/gmr_atlas2104%3Acoral%20transects">coral transects</a>
@@ -1735,7 +1725,7 @@
 								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Acoral_negro">coral_negro</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/microzoning_2004_2006%3Amamiferos_marinos">mamiferos_marinos</a>
+								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Amamiferos_marinos">mamiferos_marinos</a>
 							</li>
 							<li>
 								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Alangostino">langostino</a>
@@ -1765,7 +1755,7 @@
 								<a class="layers error" href="http://192.168.1.41/layers/microzoning_2004_2006%3Aaves_marinas%20">aves_marinas</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/microzoning_2004_2006%3Amonitoreo_de_parametros_fisicos">monitoreo_de_parametros_fisicos</a>
+								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Amonitoreo_de_parametros_fisicos">monitoreo_de_parametros_fisicos</a>
 							</li>
 							<li>
 								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Aorganismos_sesiles">organismos_sesiles</a>
@@ -1792,7 +1782,7 @@
 								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Amonitoreo_de_organismos_sesiles">monitoreo_de_organismos_sesiles</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/microzoning_2004_2006%3Alisas">lisas</a>
+								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Alisas">lisas</a>
 							</li>
 							<li>
 								<a class="layers" href="http://192.168.1.41/layers/microzoning_2004_2006%3Amacroinvertebrados">macroinvertebrados</a>
@@ -1822,13 +1812,13 @@
 					<label for="level2_20_1">natural_earth</label>
 						<ul class ="directorio">
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_maritime_indicator">ne_10m_admin_0_boundary_lines_maritime_indicator</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_maritime_indicator">ne_10m_admin_0_boundary_lines_maritime_indicator</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_disputed_areas">ne_10m_admin_0_boundary_lines_disputed_areas</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_disputed_areas">ne_10m_admin_0_boundary_lines_disputed_areas</a>
 							</li>
 							<li>
-								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_scale_rank_minor_islands">	ne_10m_admin_0_scale_rank_minor_islands</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_scale_rank_minor_islands">ne_10m_admin_0_scale_rank_minor_islands</a>
 							</li>
 							<li>
 								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_scale_rank">ne_10m_admin_0_scale_rank</a>
@@ -1843,7 +1833,7 @@
 								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_map_subunits">ne_10m_admin_0_map_subunits</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_antarctic_claims">ne_10m_admin_0_antarctic_claims</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_antarctic_claims">ne_10m_admin_0_antarctic_claims</a>
 							</li>
 							<li>
 								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3A10m_wgs84_bounding_box">10m_wgs84_bounding_box</a>
@@ -1852,10 +1842,10 @@
 								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_map_units">ne_10m_admin_0_map_units</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_disputed_areas">ne_10m_admin_0_disputed_areas</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_disputed_areas">ne_10m_admin_0_disputed_areas</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_seams">ne_10m_admin_0_seams</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_seams">ne_10m_admin_0_seams</a>
 							</li>
 							<li>
 								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_countries">ne_10m_admin_0_countries</a>
@@ -1864,16 +1854,16 @@
 								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_map_units">ne_10m_admin_0_boundary_lines_map_units</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_antarctic_claim_limit_lines">ne_10m_admin_0_antarctic_claim_limit_lines</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_antarctic_claim_limit_lines">ne_10m_admin_0_antarctic_claim_limit_lines</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_land">ne_10m_admin_0_boundary_lines_land</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_boundary_lines_land">ne_10m_admin_0_boundary_lines_land</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_label_points">ne_10m_admin_0_label_points</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_label_points">ne_10m_admin_0_label_points</a>
 							</li>
 							<li>
-								<a class="layers error" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_pacific_groupings">ne_10m_admin_0_pacific_groupings</a>
+								<a class="layers" href="http://192.168.1.41/layers/natural_earth%3Ane_10m_admin_0_pacific_groupings">ne_10m_admin_0_pacific_groupings</a>
 							</li>
 						</ul>
 				</li>
